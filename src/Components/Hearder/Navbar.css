@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Navbar {
+    height: 60px;
+    padding: 0px 50px 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2 !important;
+
+}
+
+.Nav-link {
+    margin-right: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.hamBurgerMenu {
+    display: none;
+}
+
+
+.right-header {
+    width: 28%;
+    display: flex;
+    align-items: center;
+    /* background-color: aqua; */
+    gap: 15px;
+}
+
+.header-search-input {
+    position: relative;
+}
+
+.header-search-input input {
+    padding: 8px;
+    width: 100%;
+}
+
+.fa-magnifying-glass {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.profilelogo {
+    height: 40px;
+    width: 40px;
+    border: 1px solid red;
+    border-radius: 50%;
+    position: relative;
+}
+
+.profilelogo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+.profileDropdown {
+    position: absolute;
+    padding: 15px;
+    background-color: #f2caca;
+    left: -170px;
+    width: 30vh;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+
+.listName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.listName:hover {
+    background-color: red;
+    border-radius: 10px;
+}
+
+
+.Main_div {
+    display: none;
+}
+
+.imgs3{
+  width: 100%;
+ 
+}
+
+.cartButton{
+    width: 10%;
+    display: flex;
+    margin-right:7px;
+}
+
+@media only screen and (max-width: 600px) {
+    .Navbar {
+        /* background-color: red; */
+        padding: 0px 10px 0px 10px;
+    }
+
+    .Nav-link {
+        margin-right: 10px;
+        font-size: 12px;
+    }
+
+    .header-search-input input {
+        display: none;
+    }
+
+    .fa-magnifying-glass {
+        display: none;
+    }
+
+    .left-header h2 {
+        font-size: 15px;
+    }
+
+    .left-header {
+        width: 20%;
+    }
+
+    .fa-cart-plus {
+        display: none;
+    }
+
+    .profileDropdown {
+
+
+        background-color: #f2caca;
+        left: -170px;
+        width: 25vh;
+        border-radius: 5px;
+    }
+
+    .middle-header {
+        display: none;
+    }
+
+    .fa-heart {
+        font-size: 30px;
+        color: red;
+
+    }
+
+    .fa-hearts {
+        display: none;
+    }
+
+    .right-header {
+        width: 34%;
+    }
+
+    .hamBurgerMenu {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .hamBurgerMenu img {
+        width: 25px;
+    }
+
+    .Main_div {
+        background: rgba(255, 255, 255, 0.372);
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        backdrop-filter: blur(3px);
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        padding-top: 20%;
+
+    }
+
+
+    .sideBAr {
+
+        display: flex;
+        flex-direction: column;
+        /* position: absolute; */
+        /* top: 50px; */
+        z-index: 10;
+        width: 40%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+
+
+    }
+
+    .Nav-link {
+        padding: 10px 20px 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .Nav-link:hover {
+        background-color: rgb(255, 60, 0);
+    }
+
+    .crossBtn {
+        position: absolute;
+        left: 30px;
+        top: 40px;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 30px;
+
+    }
+.imgs3{
+    width: 30px;
+}
+
+.cartButton{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    }
+   
+}

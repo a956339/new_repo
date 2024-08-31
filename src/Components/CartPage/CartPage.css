@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+.CartPageMaincontainer {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    /* border: 1px solid #ddd;  */
+}
+
+td img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    padding: 8px;
+
+}
+
+
+.menus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px 10px 40px;
+
+}
+
+.returnBtn {
+    border: .5px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.returnBtn p {
+    font-size: 14px;
+}
+
+.subTotal {
+    display: flex;
+    padding: 10px 40px 10px 40px;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+
+.Coupon {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+
+}
+
+.Coupon input {
+    padding: 10px;
+    width: 25vw;
+
+}
+
+.couponBtn {
+    padding: 5px 10px 5px 10px;
+    height: 30px;
+    width: 100px;
+    background-color: #DB4444;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.couponBtn p {
+    color: white;
+    font-size: 15px;
+}
+
+
+
+.coupon-and-total {
+    flex: 1;
+    min-width: 300px;
+    max-width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.cart-total {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.total-line {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .subTotal {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .menus {
+        padding: 10px;
+
+    }
+
+    .Coupon input {
+        width: 70vw;
+
+    }
+
+    .couponBtn {
+        padding: 6px;
+       
+    }
+
+
+    .couponBtn p {
+        font-size: 12px;
+    }
+
+
+    .coupon-and-total {
+
+        min-width: 100%;
+        margin-top: 20px;
+
+    }
+
+
+}

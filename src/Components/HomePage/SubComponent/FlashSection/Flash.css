@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.days {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.darkLine {
+    height: 25px;
+    width: 10px;
+    background-color: #DB4444;
+}
+
+.days p {
+    font-size: 12px;
+    font-weight: 600;
+    color: #DB4444;
+}
+
+.saleType {
+    margin-top: 15px;
+}
+
+
+
+
+
+.FlashSlider{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    overflow: scroll;
+   
+}
+
+
+.FlashSlider::-webkit-scrollbar {
+    display: none;
+  }
+
+  .FlashAllProduct{
+    padding: 10px;
+    background-color: #DB4444;
+    font-size: 13px;
+    border-radius: 5px;
+}
+.FlashAllProductbtn{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+
+  
+
+
+
+    .FlashSlider {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    
+    .Products {
+        width: 100%; 
+        padding: 0;
+    }
+
+    .Products img {
+        width: 100%;
+    }
+
+    .AddCartButton {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+}
+
+
